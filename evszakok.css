@@ -1,0 +1,6 @@
+.evszakok{
+    height: 50%;
+}
+.evszakok:hover{
+    transform: scale(1.1);
+}
