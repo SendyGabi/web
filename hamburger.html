@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mate Oldala</title>
+</head>
+<body bgcolor="#FFE3C9">
+  <div class="sidebar">
+    <a href="index.html">Rólam</a>
+    <br>
+    <a href="keplink.html">Képlink</a>    
+    <br>
+    <a href="lista.html">Lista</a>
+    <br>
+    <a href="orarend.html">Orarend</a>
+    <br>
+    <a href="pizza.html">Pizza</a>
+
+        <form action="pizza.html">
+            <fieldset>
+                <legend>Vevő adatai</legend>
+                Név:    <input type="text">
+                <br>
+                <br>
+                Telefonszám: <input type="text">
+                <br>
+                <br>
+                Falu/Város: <input type="text">
+                <br>
+                <br>
+                Utca: <input type="text">
+                Házszám: <input type="text">
+            </fieldset>
+            <fieldset>
+                <legend>Pizza</legend>
+                Méret:
+                <br>
+                <input type="radio" name="kicsi" value="26cm"> 26cm
+                <br>
+                <input type="radio" name="közepes" value="34"> 34cm
+                <br>
+                <input type="radio" name="nagy" value="52"> 52cm
+                <br>
+                <br>
+                Feltétek:
+                <br>
+                <input type="checkbox" name="sajt" id="">  Sajt
+                <br>
+                <input type="checkbox" name="sonka" id=""> Sonka
+                <br>
+                <input type="checkbox" name="Gomba" id=""> Gomba
+                <br>
+                <input type="checkbox" name="Kukorica" id=""> Kukorica
+                <br>
+                <input type="checkbox" name="bacon" id=""> Bacon
+                <br>
+                <input type="checkbox" name="lilahagyma" id=""> lilahagyma
+                <br>
+                <br>
+                Mennyiség: <input type="number">
+            </fieldset>
+            <fieldset>
+                <legend>Üdítők</legend>
+                <table>
+                    <tr>
+                        <td><input type="checkbox"> Coca Cola </td>
+                        <td align="right"><input type="number"> db.</td>
+                        <br>
+                    </tr>
+                        <br>
+                        <td><input type="checkbox"> Coca Cola Zero</td>
+                        <td><input type="number"> db.</td>
+                        <br>
+                    </tr>
+                        <td><input type="checkbox"> Fanta </td>
+                        <td><input type="number"> db.</td>
+                        <br>
+                    </tr>
+                        <td><input type="checkbox"> Xixo Tea </td>
+                        <td><input type="number"> db.</td>
+                        <br>
+                    </tr>
+                        <td><input type="checkbox"> Sprite </td>
+                        <td><input type="number"> db.</td>
+                    </tr>
+                </table>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Végezetül</legend>
+                Egyéb kivánság:
+                <br>
+                <textarea cols=40 rows=4></textarea>
+                <br>
+                <input type='reset' name="visszaállítás" value="Reset"> <input type='submit' value="Submit">
+            </fieldset>
+        </form>
+
+    </div>
