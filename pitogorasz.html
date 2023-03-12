@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitagorasz</title>
+</head>
+<body>
+    <H1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">PTAGORASZ TÉTEL SZÁMOLÓ</H1>
+    <form>
+        <label for="a">A oldal hossza</label>
+        <input type="number" id="a" name="a"><br><br>
+        <label for="b">B oldal hossza</label>
+        <input type="number" id="b" name="b"><br><br>
+        <label for="c">C oldal hossza</label>
+        <input type="number" id="c" name="c"><br><br>
+        <button type="button" onclick="calculate()">Számol</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function calculate() {
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            var c = document.getElementById("c").value;
+
+            if (a === "") {
+                var result = Math.sqrt(Math.pow(c, 2) - Math.pow(b, 2));
+                document.getElementById("result").innerHTML = "Az A oldal hossza: " + result;
+            } else if (b === "") {
+                var result = Math.sqrt(Math.pow(c, 2) - Math.pow(a, 2));
+                document.getElementById("result").innerHTML = "A B oldal hossza: " + result;
+            } else if (c === "") {
+                var result = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+                document.getElementById("result").innerHTML = "A C oldal hossza: " + result;
+            }
+        }
+    </script>
+</body>
+</html>
