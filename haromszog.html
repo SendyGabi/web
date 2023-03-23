@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haromszog</title>
+    <style>
+
+        #haromszog {
+            border-left: 100px solid yellow;
+            border-top: 200px solid transparent
+
+        }
+
+    </style>
+</head>
+
+<body>
+        <li><a class="active" href="index.html">FŐOLDAL</a></li>
+        <li><a href="keplink.html">keplink</a></li>
+        <li><a href="tablazat.html">TÁBLÁZAT</a></li>
+        <li><a href="osszeado.html">SZÁMOLÓGÉP</a></li>
+        <li><a href="urlap.html">urlap</a></li>
+        <li><a href="evszakok.html">evszakok</a></li>
+        <li><a href="lista.html">lista</a></li>
+        <li><a href="pitogorasz.html">pitogorasz</a></li>
+
+    <h1>pitogorasz tétel háromszög rajzoló</h1>
+
+    <form action="javascript:void(0)">
+<fieldset>
+
+    a: <input type="number" name="aaa" id="a" oniput="rajzol()">
+    b: <input type="number" name="aaa" id="b" oniput="rajzol()">
+    c: <input type="number" name="aaa" id="c" oniput="rajzol()">
+    <div id="haromszog"></div>
+
+</fieldset>
+
+    </form>
+    <script>
+
+        function rajzol() {
+            if (a.value != 0&& b.value !=0){
+                c.value=Math.sqrt((a.value*a.value)+(b.value*b.value))
+        }
+
+        if (b.value != 0&& c.value !=0){
+                a.value=Math.sqrt((c.value*c.value)+(b.value*b.value))
+
+        }
+
+        if (a.value != 0&& c.value !=0){
+                b.value=Math.sqrt((c.value*c.value)+(a.value*a.value))
+        }
+        const hsz =document.getElementById("haromszog");
+        hsz.style = "border-left>;" + a.value + "px solid yellow";
+        + "border-top"; + b.value + "px solid transparent"
+
+    </script>
+    
+</body>
+</html>
