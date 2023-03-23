@@ -1,35 +1,82 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>evszakok</title>
-    <link rel="stylesheet" href="evszakok.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Évszakok</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HA OLDALA</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        div.evszak {
+            margin: 1%;
+            float: left;
+            transition: .8s;
+            font-size: x-large;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        img {
+            border: 3px solid black;
+            width: 250px;
+        }
+
+        div.evszak:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
+
 <body>
-    <div class="evszakok">
-        <img src="img/nyár.jpg" alt="nyar">
-        <img src="img/tavasz.jpg" alt="tavasz">
-        <img src="img/tél.jpg" alt="tél">
-        <img src="img/ősz.jpg" alt="ősz">
-        <ul>
-            <li><a class="active" href="index.html">FŐOLDAL</a></li>
-            <li><a href="keplink.html">KÉPLINK</a></li>
-            <li><a href="tablazat.html">TÁBLÁZAT</a></li>
-            <li><a href="evszakok.html">EVSZAKOK</a></li>
-          </ul>  
-          <a href="index.html"></a>
-          főoldal: <a href="index.html">vissza a főoldalra</a>
-          <a href="tablazat.html">Táblázat </a>
-          
+    <div style="overflow: auto;">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">FŐOLDAL</a></li>
+                <li><a href="keplink.html">KÉPLINK</a></li>
+                <li><a href="lista.html">LISTA</a></li>
+                <li><a href="tablaz.html">ÓRAREND</a></li>
+                <li><a href="urlap.html">ŰRLAP</a></li>
+                <li><a class="active" href="evszak.html">ÉVSZAKOK</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="evszak">
+                <img src="img/tavasz.jpg" style="width: 12vw; height: auto;" alt="tavasz">
+                <p>Tavasz</p>
+            </div>
+            <div class="evszak">
+                <img src="img/nyár2.jpg" style="width: 12vw; height: auto;" alt="nyár">
+                <p>Nyár</p>
+            </div>
+            <div class="evszak">
+                <img src="img/ősz.jpg" style="width: 12vw; height: auto;" alt="ősz">
+                <p>Ősz</p>
+            </div>
+            <div class="evszak">
+                <img src="img/tél.jpg" style="width: 12vw; height: auto;" alt="tél">
+                <p>Tél</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <footer>
+                <p>Szerző: Sventner Gábor <br>
+                    <a id="email" href="mailto:hajdua@kkszki.hu">sventner6@kkszki.hu</a>
+                </p>
+            </footer>
+        </div>
     </div>
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
 </body>
+
 </html>
+
